@@ -67,6 +67,9 @@ function Gallery() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <div className='flex justify-center mb-8'>
+        <h1 className='text-3xl font-bold'>Welcome to the Art Gallery</h1>
+        </div>
       <SearchBar onSearch={handleSearch} />
       {loading ? (
         <Loading />
