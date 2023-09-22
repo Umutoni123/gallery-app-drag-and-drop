@@ -12,6 +12,9 @@ import winter from '../images/winter.avif'
 import art from '../images/art.avif'
 import dog from '../images/dog.avif'
 
+import nature from '../images/forest1.avif'
+
+
 
 function Gallery() {
   const [images, setImages] = useState([]);
@@ -30,6 +33,8 @@ function Gallery() {
         { id: '6', src: winter , tag: 'Winter' },
         { id: '7', src: art , tag: 'Art' },
         { id: '8', src: dog , tag: 'Dog' },
+        { id: '9', src: nature , tag: 'Nature' },
+        
 
         
       ];
@@ -72,7 +77,7 @@ function Gallery() {
               <div
                 ref={provided.innerRef}
                 {...provided.droppableProps}
-                className="container mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                className="container mx-auto mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
               >
                 {images
                   .filter((image) =>
