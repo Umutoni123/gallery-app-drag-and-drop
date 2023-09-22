@@ -1,5 +1,6 @@
-#Gallery draga and drop
-##Given task
+# Gallery draga and drop
+
+## Given task
 
 Authentication
 Login with email and password
@@ -9,6 +10,6 @@ Search images by tag
 Loading state with skeleton loaders
 Responsive design
 
-##Login
+## Login
 UserName: user@example.com
 Password: 1Password
