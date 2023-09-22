@@ -6,10 +6,11 @@ import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import image2 from '../images/photo-1695018128519-bced2bac1b71.avif'
 import image3 from '../images/cow.avif'
 import image4 from '../images/city.webp'
-import image1 from '../images/wall.jpg'
+import people from '../images/people.jpg'
 import plant from '../images/plants.avif'
 import winter from '../images/winter.avif'
-
+import art from '../images/art.avif'
+import dog from '../images/dog.avif'
 
 
 function Gallery() {
@@ -21,14 +22,16 @@ function Gallery() {
     // Simulate fetching images from an API (replace with actual API call)
     setTimeout(() => {
       const fetchedImages = [
-        { id: '1', src: image1, tag: 'Nature' },
+        { id: '1', src: people, tag: 'People' },
         { id: '2', src: image2 , tag: 'City' },
         { id: '3', src: image3 , tag: 'Cow' },
         { id: '4', src: image4 , tag: 'City' },
         { id: '5', src: plant , tag: 'Plant' },
         { id: '6', src: winter , tag: 'Winter' },
+        { id: '7', src: art , tag: 'Art' },
+        { id: '8', src: dog , tag: 'Dog' },
 
-        // Add more images and tags as needed
+        
       ];
       setImages(fetchedImages);
       setLoading(false);
